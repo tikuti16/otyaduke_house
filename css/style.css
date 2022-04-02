@@ -40,27 +40,23 @@ li {
   letter-spacing: 0.1em;
 }
 
-.button .sns {
-  line-height: 15px;
-  display: block;
-}
-
-.button .sns a {
+a.sns  {
   text-align: left;
   font-family: 'serif';
   line-height: 15px;
-  display: block;
+  display: inline-block;
 }
 
-.button .sns:hover {
+a.sns:hover {
   background: #244174;
   border-color: #244174;
   color: #ffffff;
 }
-
+/*
 .button .sns a:hover {
   color: #ffffff;
 }
+*/
 
 /*--------------------
 ヘッダー
@@ -82,6 +78,7 @@ header {
   margin-right: 50px;
 }
 
+/*
 .header .sns_box .button {
   width: 250px;
   height: 20px;
@@ -89,17 +86,20 @@ header {
   font-family: 'serif';
   line-height: 20px;
 }
+*/
 /*
 .header .sns_box .button:first-child {
   margin-right: 5px;
 }
 */
 
+/*
 .header .sns_box .button:hover {
   color: #ffffff;
   background: #244174;
   border-color: #244174;
 }
+*/
 
 .header .logo {
   text-align: center;
@@ -155,7 +155,7 @@ footer {
 }
 
 footer .wrapper {
-  margin: 10px 20px;
+  margin: 10px 0 0 0;
   padding: auto 5% auto 5%;
   /* text-align: center; */
   height: 100%;
@@ -209,20 +209,8 @@ footer .sns_box {
   flex: 3;
 }
 
-footer .sns_button .button {
-  width: 200px;
-  height: 15px;
-  text-align: left;
-  font-family: 'serif';
-  line-height: 15px;
-  display: block;
-}
-
-.footer .button .sns:hover {
-  color: #ffffff;
-  background: #244174;
-  border-color: #244174;
-  line-height: 100%;
+footer .sns_button {
+  display: flex;
 }
 
 footer .address {
@@ -236,30 +224,21 @@ footer .address h3 {
   letter-spacing: 1px
 }
 
-footer .contact  .button {
-  /* display: block; */
-  width: 400px;
-} 
-
-footer .contact .button {
-  width: 200px;
-  height: 15px;
+a.contact_btn  {
   text-align: left;
   font-family: 'serif';
   line-height: 15px;
-  display: block;
-  color: #ffffff;
+  display: inline-block;
+  color: #fff;
+  border-color: #244174;
   background-color: #244174;
 }
 
-footer .contact .button a {
-  color: #ffffff;
+a.contact_btn:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #244174;
 }
-
-.footer .contact .button:hover {
-  line-height: 100%;
-}
-
 
 footer .copyright {
   text-align: center;
