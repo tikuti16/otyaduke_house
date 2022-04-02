@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+html {
+  font-size: 18px;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+a {
+  color: #000;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  border: 1px solid;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  /* position: relative; */
+  display: inline-block;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+}
+
+.button .sns {
+  line-height: 15px;
+  display: block;
+}
+
+.button .sns a {
+  text-align: left;
+  font-family: 'serif';
+  line-height: 15px;
+  display: block;
+}
+
+.button .sns:hover {
+  background: #244174;
+  border-color: #244174;
+  color: #ffffff;
+}
+
+.button .sns a:hover {
+  color: #ffffff;
+}
+
+/*--------------------
+ヘッダー
+--------------------*/
+
+header {
+  background-color: #EED8AE;
+  height: 600%;
+  margin: 0;
+}
+
+.header .wrapper {
+  padding: 50px 5% 100px 5%;
+  height: 100%;
+}
+
+.header .sns_box {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.header .sns_box .button {
+  width: 250px;
+  height: 20px;
+  text-align: left;
+  font-family: 'serif';
+  line-height: 20px;
+}
+/*
+.header .sns_box .button:first-child {
+  margin-right: 5px;
+}
+*/
+
+.header .sns_box .button:hover {
+  color: #ffffff;
+  background: #244174;
+  border-color: #244174;
+}
+
+.header .logo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.header .menus {
+  /* text-align: center; */
+  padding: 0 50%;
+  display: block;
+}
+
+.header .menus ul {
+  text-align: center;
+  display: flex;
+  flex-direction : row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header .menus li {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  display: inline-block;
+  margin-right: 80px;
+}
+
+
+.header .menus li:first-child {
+  margin-right: 0;
+}
+
+
+.header .menus li a {
+  font-size: 1.5rem;
+  /* z-index: 1; */
+}
+
+.header .menus li a:hover {
+  opacity: 0.7;
+  border-right: 1px solid;
+  transition: all 0.3s;
+}
+
+/*-----------------------
+フッター
+-----------------------*/
+
+footer {
+  background-color: #EED8AE;
+  margin: 0;
+}
+
+footer .wrapper {
+  margin: 10px 20px;
+  padding: auto 5% auto 5%;
+  /* text-align: center; */
+  height: 100%;
+  /* display: block; */
+}
+
+footer .footer_main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  /* text-align: center; */
+  padding: 20px auto 20px auto;
+}
+
+footer .footer_main .footer_logo{
+  /* flex-shrink : 1; */
+  margin-right: 70px;
+}
+
+footer .footer_logo img {
+  max-width: 150px;
+}
+
+footer .footer_content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+footer .footer_title {
+  display: flex;
+  /* justify-content: space-around; */
+  margin-bottom: 10px;
+  height: 80px;
+  align-items: center;
+}
+
+footer .shop_name {
+  margin-right: 20px;
+  line-height: 30px;
+  flex: 2;
+}
+
+footer .shop_name h2 {
+  font-size: 1.3rem;
+}
+
+footer .sns_box {
+  text-align: right;
+  flex: 3;
+}
+
+footer .sns_button .button {
+  width: 200px;
+  height: 15px;
+  text-align: left;
+  font-family: 'serif';
+  line-height: 15px;
+  display: block;
+}
+
+.footer .button .sns:hover {
+  color: #ffffff;
+  background: #244174;
+  border-color: #244174;
+  line-height: 100%;
+}
+
+footer .address {
+  /* display: block; */
+  margin-bottom: 20px;
+}
+
+footer .address h3 {
+  font-size: 1.1rem;
+  line-height: 25px;
+  letter-spacing: 1px
+}
+
+footer .contact  .button {
+  /* display: block; */
+  width: 400px;
+} 
+
+footer .contact .button {
+  width: 200px;
+  height: 15px;
+  text-align: left;
+  font-family: 'serif';
+  line-height: 15px;
+  display: block;
+  color: #ffffff;
+  background-color: #244174;
+}
+
+footer .contact .button a {
+  color: #ffffff;
+}
+
+.footer .contact .button:hover {
+  line-height: 100%;
+}
+
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .copyright p{
+  font-size: 0.75rem;
+}
+
