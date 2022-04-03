@@ -40,23 +40,26 @@ li {
   letter-spacing: 0.1em;
 }
 
+a.button:hover {
+  background: #244174;
+  border-color: #244174;
+  color: #ffffff;
+}
+
 a.sns  {
   text-align: left;
   font-family: 'serif';
   line-height: 15px;
   display: inline-block;
+  width: 200px;
+  height: 10px;
+  margin-left: 10px;
+  line-height: 10px;
 }
 
-a.sns:hover {
-  background: #244174;
-  border-color: #244174;
-  color: #ffffff;
+.fa-brands {
+  margin-right: 5px;
 }
-/*
-.button .sns a:hover {
-  color: #ffffff;
-}
-*/
 
 /*--------------------
 ヘッダー
@@ -78,28 +81,11 @@ header {
   margin-right: 50px;
 }
 
-/*
-.header .sns_box .button {
-  width: 250px;
-  height: 20px;
-  text-align: left;
-  font-family: 'serif';
-  line-height: 20px;
+.header .sns_box a {
+  margin-right: 2px;
+  font-size: 0.75rem;
+  padding-top: 10px;
 }
-*/
-/*
-.header .sns_box .button:first-child {
-  margin-right: 5px;
-}
-*/
-
-/*
-.header .sns_box .button:hover {
-  color: #ffffff;
-  background: #244174;
-  border-color: #244174;
-}
-*/
 
 .header .logo {
   text-align: center;
@@ -108,7 +94,6 @@ header {
 }
 
 .header .menus {
-  /* text-align: center; */
   padding: 0 50%;
   display: block;
 }
@@ -128,21 +113,286 @@ header {
   margin-right: 80px;
 }
 
-
 .header .menus li:first-child {
   margin-right: 0;
 }
 
-
 .header .menus li a {
   font-size: 1.5rem;
-  /* z-index: 1; */
 }
 
 .header .menus li a:hover {
   opacity: 0.7;
   border-right: 1px solid;
   transition: all 0.3s;
+}
+
+/*-----------------------
+メイン
+-----------------------*/
+main .wrapper {
+  margin: 150px 0px;
+  padding: 0;
+  width: 100%;
+}
+
+main section {
+  margin-bottom: 150px;
+  width: 100%;
+}
+
+/* コンセプトとおしながき 共通 */
+main .main_back {
+  background-color: #EED8AE;
+  height: 400px;
+  z-index: 5;
+  width: 90%;
+}
+
+main .title_wrap {
+  position: relative;
+  z-index: 80;
+  top: 40px;
+  background-color: #244174;
+  height: 80px;
+  opacity: 0.90;
+  width: 40%;
+}
+
+main h2 {
+  font-size: 2.0rem;
+  color: #f0f0f0;
+  opacity: 0.9;
+}
+
+main .title_wrap .title {
+  position: absolute;
+  top: 20px;
+}
+
+main .mainvisual {
+  width: 90%;
+}
+
+main .main_back {
+  position:relative;
+  height: 350px;
+}
+
+main .mainvisual .main_img {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+main .mainvisual img{
+  max-width: 450px;
+}
+
+#oshinagaki .main_logo img {
+  max-width: 250px;
+}
+
+main .mainvisual .main_text {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+}
+
+main .msg_title {
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
+main .msg {
+  font-size: 0.65rem;
+  line-height: 150%;
+}
+
+main .main_logo {
+  margin-top: -60px;
+  z-index: 20;
+  position: absolute;
+}
+
+main .main_logo img {
+  width: 300px;
+}
+
+/* お知らせと店舗情報 共通 */
+main .info_wrapper {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .info_wrapper .title_wrapper {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main .title_wrapper img {
+  left: 50%;
+  right: 50%;
+  top:0;
+  width: 700px;
+}
+
+main .info_wrapper .title_wrapper .info_title {
+  position: absolute;
+  left: 45%;
+  top: 45px;
+}
+
+/*-----------------------
+コンセプト
+-----------------------*/
+#concept .title_wrap {
+  border-radius: 0 40px 40px 0;
+}
+
+#concept .title_wrap .title {
+  right: 10%;
+}
+
+#concept .mainvisual {
+  text-align: right;
+  margin-left: 20%;
+}
+
+#concept .main_back {
+  border-radius: 200px 0 0 200px;
+}
+
+#concept .mainvisual .main_img {
+  position: absolute;
+  right: 5%;
+}
+
+#concept .mainvisual .main_text {
+  left: 100px;
+  text-align: left;
+}
+
+#concept .main_logo {
+  text-align: left;
+  margin-left: 100px;
+}
+
+/*-----------------------
+おしながき
+-----------------------*/
+#oshinagaki .title_wrap {
+  border-radius: 40px 0 0 40px;
+  margin-left: 60%;
+}
+
+#oshinagaki .title_wrap .title {
+  left: 10%;
+}
+
+#oshinagaki .mainvisual {
+  text-align: left;
+  margin-right: 20%;
+  position: relative;
+}
+
+#oshinagaki .main_back {
+  border-radius: 0 200px 200px 0;
+}
+
+#oshinagaki .mainvisual .main_img {
+  left: 5%;
+}
+
+#oshinagaki .mainvisual .main_text {
+  right: 200px;
+  text-align: left;
+}
+
+#oshinagaki .main_logo {
+  position: absolute;
+  right: 25%;
+  margin-left: 100px;
+}
+
+#oshinagaki .msg_button .button {
+  width: 220px;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 20px;
+}
+
+/*-----------------------
+お知らせ
+-----------------------*/
+
+#news .info_text {
+  margin-bottom: 20px;
+}
+
+#news .news_view {
+  margin-right:20%;
+  margin-left:20%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 120%;
+}
+
+#news .info_text dt {
+  width: 20%;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+#news .info dt:first-of-type {
+  margin-top: 0;
+}
+
+#news .info_text dd {
+  width: 80%;
+  margin-top: 10px;
+}
+
+#news .news_btn .button {
+  width: 300px;
+  height: 20px;
+  line-height: 20px;
+}
+/*-----------------------
+店舗情報
+-----------------------*/
+#shopinfo .info_text {
+  margin-top: 20px;
+}
+
+#shopinfo .main_visual img {
+  width: 600px;
+}
+
+#shopinfo .shop_add {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#shopinfo .shop_add h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#shopinfo .shop_add p {
+  line-height: 150%;
+}
+
+#shopinfo .map_btn .button {
+  width: 300px;
+  height: 20px;
+  line-height: 20px;
 }
 
 /*-----------------------
@@ -155,11 +405,9 @@ footer {
 }
 
 footer .wrapper {
-  margin: 10px 0 0 0;
-  padding: auto 5% auto 5%;
-  /* text-align: center; */
+  margin: 10px 10px 0 10px;
+  padding: 30px 20px 20px 20px;
   height: 100%;
-  /* display: block; */
 }
 
 footer .footer_main{
@@ -167,12 +415,10 @@ footer .footer_main{
   justify-content: center;
   margin-bottom: 20px;
   margin-left: 50px;
-  /* text-align: center; */
   padding: 20px auto 20px auto;
 }
 
 footer .footer_main .footer_logo{
-  /* flex-shrink : 1; */
   margin-right: 70px;
 }
 
@@ -184,20 +430,19 @@ footer .footer_content {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  padding-left: 40px;
 }
 
 footer .footer_title {
   display: flex;
-  /* justify-content: space-around; */
   margin-bottom: 10px;
   height: 80px;
-  align-items: center;
 }
 
 footer .shop_name {
   margin-right: 20px;
-  line-height: 30px;
-  flex: 2;
+  line-height: 50px;
+  flex: 3;
 }
 
 footer .shop_name h2 {
@@ -206,16 +451,19 @@ footer .shop_name h2 {
 
 footer .sns_box {
   text-align: right;
-  flex: 3;
+  flex: 2;
 }
 
-footer .sns_button {
-  display: flex;
+footer .sns_button a {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 footer .address {
-  /* display: block; */
   margin-bottom: 20px;
+  line-height: 30px;
 }
 
 footer .address h3 {
@@ -224,9 +472,12 @@ footer .address h3 {
   letter-spacing: 1px
 }
 
-a.contact_btn  {
+footer .contact {
   text-align: left;
-  font-family: 'serif';
+}
+
+a.contact_btn  {
+  padding: 20px 30px;
   line-height: 15px;
   display: inline-block;
   color: #fff;
@@ -235,8 +486,8 @@ a.contact_btn  {
 }
 
 a.contact_btn:hover {
-  background: #fff;
-  border-color: #fff;
+  background: #f0f0f0;
+  border-color: #f0f0f0;
   color: #244174;
 }
 
